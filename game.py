@@ -36,5 +36,21 @@ if __name__ == '__main__':
         print_dramatic_text ('Nope!')
 
     # TODO add more questions!
+    answer = input('What is the smallest country in the world? ')
+    if answer == 'Vatican' :
+        print_dramatic_text('Hooray!')
+        score += 1
+    else: 
+        print_dramatic_text ('Nah')
+    
+    answer = input('What is the Capital of Australia ')
+    if answer == 'Canberra' :
+        print_dramatic_text ('Smartypants')
+        score += 1
+    else: 
+        print_dramatic_text (Nope!)
+                             
+                             
+    
 
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
