@@ -21,7 +21,7 @@ if __name__ == '__main__':
     print_dramatic_text('Welcome ' + name + ' to my geography trivia game!')
     score = 0
 
-    answer = input('Question 1: What is the capital of the United States? ')
+    answer = input('What is the capital of the United States? ')
     if answer == 'Washington D.C.':
         print_dramatic_text('Correct!')
         score += 1
@@ -29,7 +29,7 @@ if __name__ == '__main__':
         print_dramatic_text('Dead wrong!')
 
     answer = input('What is the largest ocean in the world? ')
-    if answer == 'Pacific Ocean' :
+    if answer == 'Pacific Ocean':
         print_dramatic_text('Yippee!!')
         score += 1
     else:
@@ -37,20 +37,32 @@ if __name__ == '__main__':
 
     # TODO add more questions!
     answer = input('What is the smallest country in the world? ')
-    if answer == 'Vatican' :
+    if answer == 'Vatican':
         print_dramatic_text('Hooray!')
         score += 1
     else: 
         print_dramatic_text ('Nah')
     
-    answer = input('What is the Capital of Australia ')
+    answer = input('What is the Capital of Australia? ')
     if answer == 'Canberra' :
-        print_dramatic_text ('Smartypants')
+        print_dramatic_text('Smartypants')
         score += 1
     else: 
-        print_dramatic_text (Nope!)
-                             
-                             
-    
+        print_dramatic_text('Nope!')
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    # ask a random question
+    questions = [
+        'What is the tallest building in the world?',
+        'What is the capital of New York?',
+        'What is the largest continent?'
+    ] 
 
+    answers = [
+        'Burj Khalifa',
+        'Albany',
+        'Asia'
+    ]
+    
+                         
+    
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
