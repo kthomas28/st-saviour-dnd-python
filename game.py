@@ -3,7 +3,7 @@ import time
 
 from draw import draw_d20, draw_d6, draw_d4
 
-def print_dramatic_text(text: str, delay=0.1):
+def print_dramatic_text(text: str, delay=0.05):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(delay)
@@ -63,6 +63,13 @@ if __name__ == '__main__':
         'Asia'
     ]
     
+    r =  random.randint(0, 2)
+    answer = input(questions[r] + ' ')
+    if answer == answers[r]:
+        print_dramatic_text('You got the bonus question correct!')
+        score += 1
+    else:
+        print_dramatic_text('Sorry, you missed the bonus question!')
                          
     
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
