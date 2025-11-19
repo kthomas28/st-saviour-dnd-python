@@ -57,6 +57,7 @@ if __name__ == '__main__':
         'What is the largest continent?'
     ] 
 
+    # answers to the random questions
     answers = [
         'Burj Khalifa',
         'Albany',
